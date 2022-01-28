@@ -1,0 +1,14 @@
+{
+    "env": {
+        "TEST_ENV": "qa"
+    },
+    "video": false,
+    "chromeWebSecurity": false,
+    "retries": {
+        "runMode": 2
+    } ,
+    "baseUrl" : "https://qa-practical.qa.swimlane.io",
+    "requestTimeout" : 10000,
+    "defaultCommandTimeout" : 60000   
+}
+
