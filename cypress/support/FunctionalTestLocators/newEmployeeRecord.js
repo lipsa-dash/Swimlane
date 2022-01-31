@@ -1,7 +1,6 @@
 /// <reference types="Cypress" />
 import { userLogin } from "./userLogin";
 let userlogin = new userLogin();
-
 export class newEmployeeRecord {
   constructor() {
     this.pageUrl = "/record/aaUiorxB5O4lm4Cye/";

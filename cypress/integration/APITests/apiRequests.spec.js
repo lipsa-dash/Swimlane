@@ -17,6 +17,7 @@ describe("Before Hook To generate API Token", function () {
     cy.userTokenApi();
   });
 });
+
 /** POST Request: Inseart a new employee record */ 
 describe("POST: Create New Employee Record", () => {
   it("Create New Employee Record", () => {
@@ -38,6 +39,7 @@ describe("POST: Create New Employee Record", () => {
     });
   });
 });
+
 /** GET Request:Fetch employee record Id */ 
 describe("GET: Fetch New Employee Record details", () => {
   it("Fetch New Employee Record", () => {
@@ -53,6 +55,7 @@ describe("GET: Fetch New Employee Record details", () => {
     });
   });
 });
+
 /** DELETE Request:Delete employee record from database */ 
 describe("DELETE: Delete created Employee Record", () => {
   it("Delete Employee Record", () => {

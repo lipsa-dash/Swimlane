@@ -1,5 +1,4 @@
 /// <reference types="Cypress" />
-
 export class userLogin {
   constructor() {
     this.pageUrl = "login";
@@ -13,6 +12,7 @@ export class userLogin {
     cy.visit(this.baseUrl + "/" + this.pageUrl);
     cy.contains("Welcome to Swimlane").should("be.visible");
   }
+  
   userLogin() {
     this.visit();
     cy.fixture("user.json").then((users) => {
