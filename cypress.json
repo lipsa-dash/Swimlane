@@ -1,14 +1,17 @@
 {
     "env": {
-        "TEST_ENV": "qa"
+        "baseUrl": "https://qa-practical.qa.swimlane.io",
+        "APIURL": "https://qa-practical.qa.swimlane.io/api",
+        "loginAPIURl": "/user/login",
+        "applicationId": "aaUiorxB5O4lm4Cye",
+        "createRecordURI": "/app/aaUiorxB5O4lm4Cye/record"
     },
     "video": false,
     "chromeWebSecurity": false,
     "retries": {
         "runMode": 2
-    } ,
-    "baseUrl" : "https://qa-practical.qa.swimlane.io",
-    "requestTimeout" : 10000,
-    "defaultCommandTimeout" : 60000   
+    },
+    "Success_Status": 200,
+    "requestTimeout": 10000,
+    "defaultCommandTimeout": 60000
 }
-
