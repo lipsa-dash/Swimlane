@@ -3,10 +3,12 @@ import { newEmployeeRecord } from "../../support/FunctionalTestLocators/newEmplo
 let employeeRecord = new newEmployeeRecord()
 
   const employeeRecordDetails={
-    firstName : "lipsa",
-    lastName : "Dash",
-    city : "Hyderabad"
+    firstName : Math.random().toString(36).substr(2,7),
+    lastName : Math.random().toString(36).substr(2,7),
+    city : Math.random().toString(36).substr(2,7)
   }
+
+  //const visitor = {email: "new.visitor" + Math.random() + "@gmail.com"}
 
 describe("Verify Employee Record Submission", () => {
     it("Create new Employee record", () => {

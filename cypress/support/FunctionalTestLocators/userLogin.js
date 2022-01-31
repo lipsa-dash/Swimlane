@@ -6,9 +6,10 @@ export class userLogin {
         this.userNameInputLocator = 'ngx-input[label=Username]';
         this.passwordInputLocator = 'ngx-input[label=Password]';
         this.loginButtonLocator = '.btn-signin';
+        this. baseUrl = Cypress.env("baseUrl")
     }
     visit() {
-        cy.visit("/" + this.pageUrl);
+        cy.visit(this.baseUrl +'/'+ this.pageUrl);
         cy.contains("Welcome to Swimlane").should("be.visible")
     }
     userLogin() {

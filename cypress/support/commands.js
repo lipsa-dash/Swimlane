@@ -1,4 +1,5 @@
 /// <reference types="Cypress" />
+import { user } from "../fixtures/user"
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -25,12 +26,29 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-// const userNameInputLocator = 'ngx-input[label=Username]';
-// const passwordInputLocator = 'ngx-input[label=Password]';
-// const loginButtonLocator = '.btn-signin'; 
-// const createRecordUrl = '/app/aaUiorxB5O4lm4Cye/record';
-// const newEmployeeSubmissionLabel ='New Employee Submission';
+const baseUrl = Cypress.env("baseUrl")
+const loginURL = Cypress.env("APIURL") + Cypress.env("loginAPIURl");
+const dataJson = require("../fixtures/user")
 
-Cypress.Commands.add("launchUrl", () => {
-    cy.visit("/")
+// API Request:User Token generation function
+Cypress.Commands.add("userTokenApi", () => {
+    let accesstoken
+    // This will generate user token to access API Requests
+    cy.request({
+        method: 'POST',
+        url: loginURL,
+        body: {
+            "username": dataJson[0].username,
+            "password": dataJson[0].password,
+        },
+    }).then((response) => {
+        accesstoken = response.body.token;
+        cy.log(accesstoken)
+        cy.writeFile("cypress/fixtures/example.json", {
+            token: accesstoken,
+        });
+        cy.fixture('example.json').then(printToken => {
+            cy.log(printToken.token)
+        })
+    })
 })

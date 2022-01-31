@@ -1,5 +1,3 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhQ1Zrb2lVX0wwTFdwNEV4OCIsInVuaXF1ZV9uYW1lIjoibGlwc2EuZGFzaCIsImdpdmVuX25hbWUiOiJMaXBzYSBEYXNoIiwiZW1haWwiOiJsaXBzYS5kYXNoQHNlbmVjYWdsb2JhbC5jb20iLCJuYmYiOjE2NDM0NzcxMzcsImV4cCI6MTY0MzQ5MTUzNywiaWF0IjoxNjQzNDc3MTM3LCJpc3MiOiJTd2ltbGFuZSIsImF1ZCI6IlN3aW1sYW5lIn0.nPOE8wGVknnUdwnPJqwey4cglsj_sMKagXg3vcNYvAPsiES390RGRCYtQa3J_fXaEhJyY-9TU6M8O-NYX24OoA"
 }
