@@ -2,27 +2,13 @@
 
 How to setup cypress on your computer
 --------------------------------------
-Refer to https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements
-
-Then download the repo. There's hardly any setup required. 
-
-Cypress has excellent documentation for how to setup, cypress api's, and general principles for testing with cypress. 
-
-This readme is just a running log of useful tidbits of information to help you get started. 
-
-
-How to run tests on cypress
-----------------------------
-
-To open the test-runner, which is used for debugging, navigate to the Cypress folder (or just open terminal in Visual Code), then type into command line: 
-
-npx cypress open 
-
-or
-
-node_modules/.bin/cypress open
-
-Then, from the window that opens, click the file you want to run.
+Installation :
+Download this project and type below commands in the terminal:
+npm install
+How to run the bundled tests from CLI:
+npm run cy:scripts
+How to run the bundled tests from Cypress Test Runner:
+npm run cy:open
 
 Some notes about the cypress.json configuration file
 -----------------------------------------------------
