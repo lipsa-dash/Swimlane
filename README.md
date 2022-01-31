@@ -3,11 +3,13 @@
 How to setup cypress on your computer
 --------------------------------------
 Installation :
-Download this project and type below commands in the terminal:
+>Download this project and type below commands in the terminal:
 npm install
-How to run the bundled tests from CLI:
+
+>How to run the bundled tests from CLI:
 npm run cy:scripts
-How to run the bundled tests from Cypress Test Runner:
+
+>How to run the bundled tests from Cypress Test Runner:
 npm run cy:open
 
 Some notes about the cypress.json configuration file
