@@ -6,7 +6,7 @@ const dataJson = require('../../fixtures/example')
 const newRecordFields = {
     a8rki: "APIFirstName",
     a75lt: "APILastName",
-    adwok: "APITestCity",
+    adwok: "APITestCity"
 };
 let recordId
 let recordName
