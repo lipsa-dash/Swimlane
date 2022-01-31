@@ -32,10 +32,8 @@ You can also set this in cypress.json (which I have done already)
 
 How the cypress repo is organized
 ---------------------------------
-Integrated Cypress with BDD Framework and followed a page object model
-
 Classes represent the different sections of the app (A 'section' is defined as any page or group of pages that is accessible via the same url route):
--These classes will contain the links to various parts of the app (content library, settings, target etc)
+-These classes will contain the links to various parts of the app (User login, New Employee Record etc.)
 -These classes will contain the locators to various elements in the app
 -These classes will contain any text that we need to check against (like the page titles)
 -These classes will contain helper functions
