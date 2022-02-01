@@ -8,7 +8,7 @@ executors:
     resource_class: large
 steps:
   - run:
-    no_output_timeout: 30m   
+    no_output_timeout: 20m   
 workflows:
   master-tues-thurs:
     triggers:
