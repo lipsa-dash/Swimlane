@@ -1,0 +1,31 @@
+version: 2.1
+orbs:
+  cypress: cypress-io/cypress@1
+executors:
+  latest-chrome:
+    docker:
+      - image: "cypress/browsers:node14.7.0-chrome84"
+    resource_class: large
+steps:
+  - run:
+    no_output_timeout: 30m   
+workflows:
+  staging-tues-thurs:
+    triggers:
+      - schedule:
+          cron: "0 5 * * 2,4"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - cypress/run:
+          name: APITests
+          executor: latest-chrome
+          browser: chrome
+          spec: "cypress/integration/APITests/*"
+      - cypress/run:
+          name: FunctionalTests
+          executor: latest-chrome
+          browser: chrome
+          spec: "cypress/integration/FunctionalTests/*"
