@@ -54,7 +54,7 @@ How to run modules in parallel on circleci
 ------------------------------------------
 Here's an example config.yml file: 
 
-version: 2.1
+`version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
 executors:
@@ -71,7 +71,7 @@ workflows:
       - cypress/run:
           executor: latest-chrome
           browser: chrome
-          spec: "cypress/integration/FunctionalTests/userLogin.spec.js"
+          spec: "cypress/integration/FunctionalTests/userLogin.spec.js"`
 
 Each "cypress/run" is run in parallel. Simply specify in "spec" what folders to run for that module 
 
