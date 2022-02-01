@@ -6,18 +6,8 @@ executors:
     docker:
       - image: "cypress/browsers:node14.7.0-chrome84"
     resource_class: large
-steps:
-  - run:
-    no_output_timeout: 20m   
 workflows:
-  master-tues-thurs:
-    triggers:
-      - schedule:
-          cron: "0 5 * * 2,4"
-          filters:
-            branches:
-              only:
-                - master
+  build:
     jobs:
       - cypress/run:
           name: APITests
