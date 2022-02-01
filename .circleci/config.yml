@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@1
+  cypress: cypress-io/cypress@1.0.0
 executors:
   latest-chrome:
     docker:
@@ -10,7 +10,7 @@ steps:
   - run:
     no_output_timeout: 30m   
 workflows:
-  staging-tues-thurs:
+  master-tues-thurs:
     triggers:
       - schedule:
           cron: "0 5 * * 2,4"
