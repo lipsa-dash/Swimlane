@@ -75,5 +75,5 @@ workflows:
           spec: "cypress/integration/FunctionalTests/userLogin.spec.js"
           ```
 
-Each "cypress/run" is run in parallel. Simply specify in "spec" what folders to run for that module 
+Each "cypress/run" is run in parallel. Simply specify in "spec" what folders to run for that module.
 
